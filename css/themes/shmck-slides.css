@@ -1,0 +1,36 @@
+/* slide styles */
+.ft-section {
+
+}
+
+.flowtime .slide {
+  background-image: url("../../img/concrete_seamless.png");
+  background-repeat: repeat;
+}
+
+
+/* slide-head */
+.flowtime .slide-head {
+  background-color: black;
+  background-image: url("../../img/binding_dark_@2X.png");
+}
+.flowtime .slide-head h1{
+  color: #ffffff;
+}
+.flowtime .slide-head h3 {
+  color: white;
+}
+.flowtime .slide-head strong {
+  color: #ffdd00;
+}
+
+.flowtime .slide-title {
+  text-align: center;
+  line-height: 100%;
+}
+
+
+/* extras */
+.slide-note {
+  float: right;
+}

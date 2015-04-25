@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0 minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="marcolago">
+
+  <meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://flowtime-js.marcolago.com">
+  <meta property="og:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.jpg">
+  <meta property="og:site_name" content="Flowtime.js">
+  <meta property="fb:admins" content="1293500397">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://flowtime-js.marcolago.com">
+  <meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
+  <meta name="twitter:description"
+        content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+  <meta name="twitter:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.jpg">
+  <meta name="twitter:creator" content="@marcolago">
+
+  <meta name="description"
+        content="Flowtime.js is an open source framework for easily build HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+
+  <title>Flowtime.js</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="css/flowtime.css">
+  <link rel="stylesheet" href="css/themes/shmck.css"/>
+  <link rel="stylesheet" href="css/themes/shmck-slides.css"/>
+  <link rel="stylesheet" href="assets/css/prism.css">
+
+  <link rel="apple-touch-icon-precomposed" href="img/touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch-icon-ipad-retina.png">
+
+  <link rel="apple-touch-startup-image" href="img/startup-640x920.png"
+        media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="img/startup-640x1096.png"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+
+</head>
+<body class="">
+
+<div class="flowtime">
+  <div class="ft-section" data-id="section-1">
+    <!-- 1/1 -->
+    <div id="/section-1/page-1" class="ft-page slide-head slide-title" data-id="page-1">
+      <h1>Try <strong>Angular 2</strong></h1>
+      <h3>- Alpha-20 -</h3>
+      <a href="https://twitter.com/Sh_McK" class="twitter-follow-button" data-show-count="false">Follow @Sh_McK</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+    <!-- 1/2 -->
+    <div id="/section-1/page-2" class="ft-page slide-head slide-title" data-id="page-2">
+      <h1>Why <a href="https://angular.io/features.html">Change</a>?</h1>
+    </div>
+  </div>
+  <div class="ft-section" data-id="section-2">
+    <!-- 2/1 -->
+    <div id="/section-2/page-1" class="ft-page slide-head slide-title" data-id="page-3">
+      <h1><strong>ES6</strong></h1>
+    </div>
+    <!-- 2/2 -->
+    <div id="/section-2/page-2" class="ft-page slide" data-id="page-4">
+      <h2>ES6 Modules</h2>
+      <label >/app.js</label>
+      <pre><code class="language-javascript">
+        import {TodoStorage} from 'todoStorageService’;
+      </code></pre>
+      <br>
+      <label >/todoStorageService.js</label>
+      <pre><code class="language-javascript">
+        export class TodoStorage {}
+      </code></pre>
+
+    </div>
+    <!-- 2/3 -->
+    <div id="/section-2/page-3" class="ft-page slide" data-id="page-5">
+      <h2>ES6 Classes</h2>
+
+    <pre><code class="language-javascript">
+      class todoApp{}
+    </code></pre>
+      <br>
+    <pre><code class="language-javascript">
+      class todoApp{
+        // initial values
+        constructor() {
+          this.todos = [];
+        }
+        // methods
+        addTodo(todo) {
+          this.todos.push(todo);
+        }
+      }
+    </code></pre>
+
+    </div>
+    <!-- 2/4 -->
+    <div id="/section-2/page-4" class="ft-page slide" data-id="page-6">
+      <h2>ES7<p style="display: inline">ish</p> Annotations</h2>
+
+    <pre><code class="language-javascript">
+      @Component({
+        selector: 'todo-app’
+      })
+      class TodoApp {}
+    </code></pre>
+      <p class="slide-note">Use <a href="https://github.com/shuhei/babel-plugin-angular2-annotations">Babel</a> or TypeScript 1.5 (alpha)</p>
+    </div>
+    <!-- 2/5 -->
+    <div id="/section-2/page-5" class="ft-page slide" data-id="page-7">
+      <h2>ES6 Template Strings</h2>
+
+    <pre><code class="language-javascript">
+      @Component({ selector: 'todo-app' })
+      @View({
+      template: `
+        &ltinput type="text"&gt
+        &ltul&gt
+          &ltli&gtTalk about ES6&lt/li&gt
+          &ltli&gtMake a Todo app&lt/li&gt
+        &lt/ul&gt
+      `
+      })
+      class TodoApp{}
+    </code></pre>
+
+      <p class="slide-note">Backtick ` not a quote '</p>
+    </div>
+
+  </div>
+  <div class="ft-section" data-id="section-3">
+    <div id="/section-3/page-1" class="ft-page slide-head slide-title" data-id="page-7">
+      <h1>Concepts</h1>
+    </div>
+  </div>
+  <!-- 4/1 -->
+  <div class="ft-section" data-id="section-4">
+    <div id="/section-4/page-1" class="ft-page slide-head slide-title" data-id="page-7">
+      <h1><strong>Demo</strong></h1>
+      <h3>Todo App</h3>
+  </div>
+    <!-- 4/2 -->
+    <div id="/section-4/page-2" class="ft-page slide" data-id="page-7">
+      <h2>Module</h2>
+      <pre><code class="language-javascript">
+        import {bootstrap, Component, View} from 'angular2/angular2';
+      </code></pre>
+    </div>
+    <!-- 4/3 -->
+    <div id="/section-4/page-3" class="ft-page slide" data-id="page-7">
+      <h2>@Component</h2>
+      <pre><code class="language-javascript">
+        @Component({
+          selector: 'todo-app’
+        })
+        class TodoApp {}
+      </code></pre>
+    </div>
+    <!-- 4/4 -->
+    <div id="/section-4/page-4" class="ft-page slide" data-id="page-7">
+      <h2>bootstrap(app)</h2>
+      <label >/main.js</label>
+      <pre><code class="language-javascript">
+        @Component({
+          selector: 'todo-app’
+        })
+        class TodoApp {}
+
+        bootstrap(TodoApp);
+      </code></pre>
+      <label >/index.html</label>
+      <pre><code class="language-markup">
+        &lttodo-app&gt&lt/todo-app&gt
+      </code></pre>
+    </div>
+    <!-- 4/5 -->
+    <div id="/section-4/page-5" class="ft-page slide" data-id="page-7">
+      <h2>class</h2>
+      <pre><code class="language-javascript">
+        @Component({  selector: 'todo-app’ })
+        class TodoApp {
+          constructor() {
+          this.title = ‘todos’;
+          }
+        }
+      </code></pre>
+    </div>
+    <!-- 4/6 -->
+    <div id="/section-4/page-6" class="ft-page slide" data-id="page-7">
+      <h2>@View</h2>
+      <pre><code class="language-javascript">
+        @Component({ ... })
+        @View({
+          template: `&lth1&gt{{title}}&lt/h1&gt`
+        })
+        class TodoApp { ... }
+      </code></pre>
+      <br>
+       <pre><code class="language-javascript">
+         @Component({ ... })
+         @View({
+          templateUrl: 'todos.html'
+         })
+         class TodoApp { ... }
+       </code></pre>
+    </div>
+    <!-- 4/7 -->
+    <div id="/section-4/page-7" class="ft-page slide" data-id="page-7">
+      <h2>Component Properties</h2>
+      <pre><code class="language-javascript">
+        @Component({ ... })
+        @View({
+          templateUrl: 'todos.html',
+          properties: {
+            title: 'title'
+          }
+        })
+        class TodoApp { ... }
+      </code></pre>
+      <br>
+      <pre><code class="language-markup">
+        &lttodo-app title="Todos"&gt&lt/todo-app&gt
+      </code></pre>
+    </div>
+    <!-- 4/8 -->
+    <div id="/section-4/page-8" class="ft-page slide" data-id="page-7">
+      <h2>Service</h2>
+      <pre><code class="language-javascript">
+        export class TodoStorage {
+        // initial values
+          constructor () {
+            this.STORAGE_ID = 'todos-angular2';
+          }
+        // methods
+          get() {
+            return JSON.parse(localStorage.getItem(this.STORAGE_ID) || '[]');
+          }
+          put(todos) {
+            localStorage.setItem(this.STORAGE_ID, JSON.stringify(todos));
+          }
+        }
+      </code></pre>
+    </div>
+    <!-- 4/8 -->
+    <div id="/section-4/page-9" class="ft-page slide" data-id="page-7">
+      <h2>Inject Services</h2>
+      <pre><code class="language-javascript">
+        import {TodoStorage} from 'todoStorageService';
+
+        @Component({
+          selector: 'todo-app',
+          // inject!
+          injectables: [ TodoStorage ]
+        })
+        class TodoApp {
+          // alias injectables
+          constructor(storage: TodoStorage) {
+            this.todos = storage.get() || [];
+          }
+        }
+      </code></pre>
+    </div>
+  </div>
+  <div class="ft-section" data-id="section-5">
+    <!-- 5/1 -->
+    <div id="/section-5/page-1" class="ft-page slide-head slide-title" data-id="page-7">
+      <h1>Template Syntax</h1>
+    </div>
+    <!-- 5/2 -->
+    <div id="/section-5/page-2" class="ft-page slide" data-id="page-7">
+      <h2>#Local Variables</h2>
+       <pre><code class="language-markup">
+         &ltinput #new-todo&gt
+       </code></pre>
+    </div>
+    <!-- 5/3 -->
+    <div id="/section-5/page-3" class="ft-page slide" data-id="page-7">
+      <h2>{{ binding }}</h2>
+      <pre><code class="language-markup">
+        &ltinput #new-todo /&gt
+        &ltp&gt{{newTodo.value}}&lt/p&gt
+      </code></pre>
+    </div>
+    <!-- 5/4 -->
+    <div id="/section-5/page-4" class="ft-page slide" data-id="page-7">
+      <h2>(events)</h2>
+      <pre><code class="language-markup">
+        &ltinput #new-todo (keydown)&gt
+      </code></pre>
+      </br>
+      <pre><code class="language-markup">
+        &ltinput #new-todo (keydown)=“inputTodo($event, newTodo.value)”&gt
+      </code></pre>
+    </div>
+    <!-- 5/5 -->
+    <div id="/section-5/page-5" class="ft-page slide" data-id="page-7">
+      <h2>ng-* => (event)</h2>
+      <ul>
+        <li>ng-click <span class="stress">=></span> (click)</li>
+        <li>ng-dblclick <span class="stress">=></span> (dbl-click)</li>
+        <li>keydown <span class="stress">=></span> (keydown)</li>
+      </ul>
+    </div>
+    <!-- 5/6 -->
+    <div id="/section-5/page-6" class="ft-page slide" data-id="page-7">
+      <h2>[properties]</h2>
+      <pre><code class="language-markup">
+        &ltul&gt
+          &ltli [style.background-color]=“newTodo.value”&gt
+            {{newTodo.value}}
+          &lt/li&gt
+        &lt/ul&gt
+      </code></pre>
+    </div>
+  <!-- 5/7 -->
+  <div id="/section-5/page-7" class="ft-page slide" data-id="page-7">
+    <h2>ng-* => [property]</h2>
+    <ul>
+      <li>ng-src <span class="stress">=></span> [src]</li>
+      <li>ng-href <span class="stress">=></span> [href]</li>
+      <li>ng-class="name" <span class="stress">=></span> [class.name]</li>
+      <li>ng-class={'name': condition} <span class="stress">=></span> [class.name]="condition"</li>
+    </ul>
+  </div>
+  </div>
+  <div class="ft-section" data-id="section-6">
+    <!-- 6/1 -->
+    <div id="/section-6/page-1" class="ft-page slide-head slide-title" data-id="page-7">
+      <h1>Directives</h1>
+    </div>
+    <!-- 6/2 -->
+    <div id="/section-6/page-2" class="ft-page slide" data-id="page-7">
+      <h2>For</h2>
+      <pre><code class="language-javascript">
+      import {bootstrap, Component, View, For} from 'angular2/angular2';
+
+      @View({
+        templateUrl: 'todos.html’,
+        directives: [For]
+      })
+      class TodoApp{
+        constructor() {
+          this.todos = [‘first thing’, ‘second thing’, ‘third thing’];
+        }
+      }
+      </code></pre>
+    </div>
+    <!-- 6/3 -->
+    <div id="/section-6/page-3" class="ft-page slide" data-id="page-7">
+      <h2>*for="#item of items"</h2>
+      <pre><code class="language-markup">
+      &ltul *for=“#todo of todos”&gt
+        &ltli&gt
+          &ltp&gt{{todo}}&lt/p&gt
+        &lt/li&gt
+      &lt/ul&gt
+      </code></pre>
+    </div>
+  <!-- 6/4 -->
+  <div id="/section-6/page-4" class="ft-page slide" data-id="page-7">
+    <h2>index</h2>
+    <pre><code class="language-markup">
+      &ltul *for=“#todo of todos; var i = index;”&gt
+        &ltli&gt
+          &ltp&gt{{index}}. {{todo}}&lt/p&gt
+        &lt/li&gt
+      &lt/ul&gt
+    </code></pre>
+  </div>
+    <!-- 6/5 -->
+    <div id="/section-6/page-5" class="ft-page slide" data-id="page-7">
+      <h2>If</h2>
+      <pre><code class="language-javascript">
+      import {bootstrap, Component, View, For, If} from 'angular2/angular2';
+
+      @View({
+        templateUrl: 'todos.html’,
+        directives: [For, If]
+      })
+      Class TodoApp{}
+    </code></pre>
+    </div>
+    <!-- 6/6 -->
+    <div id="/section-6/page-6" class="ft-page slide" data-id="page-7">
+      <h2>*if="condition"</h2>
+      <pre><code class="language-markup">
+        &ltul *for=“#todo of todos; var i = index;” *if=“todos.length"&gt
+          &ltli&gt
+            &ltp&gt{{index}}. {{todo.title}}&lt/p&gt
+          &lt/li&gt
+        &lt/ul&gt
+      </code></pre>
+    </div>
+    <!-- 6/7 -->
+    <div id="/section-6/page-7" class="ft-page slide" data-id="page-7">
+      <h2>Switch</h2>
+      <pre><code class="language-javascript">
+        import {bootstrap, Component, View, Switch} from 'angular2/angular2';
+
+        @View({
+          template: 'tabs.html',
+          directives: [Switch]
+        })
+        class Tabs{}
+      </code></pre>
+    </div>
+    <!-- 6/8 -->
+    <div id="/section-6/page-8" class="ft-page slide" data-id="page-7">
+      <h2>[switch], [switch-when=""]</h2>
+      <pre><code class="language-markup">
+        EXAMPLE
+      </code></pre>
+    </div>
+  </div>
+  <div class="ft-section" data-id="section-7">
+    <!-- 7/1 -->
+    <div id="/section-7/page-1" class="ft-page slide-head slide-title" data-id="page-7">
+      <h1>New Features</h1>
+    </div>
+    <!-- 7/2 -->
+    <div id="/section-7/page-2" class="ft-page slide" data-id="page-7">
+      <h2>Component Communication</h2>
+      <ul>
+        <li>@Ancestor(<span class="stress">query</span>)</li>
+        <li>@Parent</li>
+        <li>@Children(<span class="stress">query</span>)</li>
+        <li>@Descendants(<span class="stress">query</span>)</li>
+      </ul>
+  </div>
+    <!-- 7/3 -->
+    <div id="/section-7/page-3" class="ft-page slide" data-id="page-7">
+      <h2>LifeCycle Hooks</h2>
+      <ul>
+      <li>onChange</li>
+      <li>onDestroy</li>
+      <li>onAllChangesDone</li>
+      <li>custom</li>
+      </ul>
+    </div>
+    <!-- 7/4 -->
+    <div id="/section-7/page-4" class="ft-page slide" data-id="page-7">
+      <h2>Angular 2 Forms</h2>
+      <pre><code class="language-javascript">
+        JS EXAMPLE
+      </code></pre>
+    </div>
+    <!-- 7/5 -->
+    <div id="/section-7/page-5" class="ft-page slide" data-id="page-7">
+      <pre><code class="language-markup">
+        HTML EXAMPLE
+      </code></pre>
+    </div>
+</div>
+
+<script src="js/brav1toolbox.js"></script>
+<script src="js/flowtime.js"></script>
+<script src="assets/js/prism.js"></script>
+<script src="assets/js/highlight.pack.js"></script>
+
+<script type="text/javascript">
+  var cacheTitle = document.title.replace("Flowtime.js | ", "");
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1228618-10']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+
+  // Configuration API test
+  Flowtime.showProgress(true);
+  // Flowtime.fragmentsOnSide(true);
+  // Flowtime.fragmentsOnBack(true);
+  // Flowtime.useHistory(false);
+  // Flowtime.slideInPx(true);
+  // Flowtime.sectionsSlideToTop(true);
+  // Flowtime.gridNavigation(false);
+  // Flowtime.useOverviewVariant(true);
+  Flowtime.parallaxInPx(true);
+  //
+  // event management
+  // Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+  Flowtime.onNavigation(onNavigation);
+  function onNavigation(e) {
+    _gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", "")]);
+    // console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+    cacheTitle = document.title.replace("Flowtime.js | ", "");
+    //console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+    //console.log('page', e.page, 'pageIndex', e.);
+    //console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+    //console.log('prevSection', e.prevSection);
+    //console.log('nextSection', e.nextSection);
+    //console.log('prevPage', e.prevPage);
+    //console.log('nextPage', e.nextPage);
+    //console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+    //console.log("isOverview", e.isOverview);
+    //console.log('progress:', e.progress, 'total:', e.total);
+    // var value = Math.round(e.progress * 100 / e.total);
+    // console.log('Completion: ' + value + '%');
+  }
+  // starts the application with configuration options
+  Flowtime.start();
+</script>
+<script type="text/javascript" src="http://slidemote.jit.su/slidemote.js#flowtime"></script>
+</body>
+</html>
