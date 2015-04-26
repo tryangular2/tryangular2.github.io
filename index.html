@@ -62,6 +62,7 @@
   <div class="ft-section" data-id="section-1">
     <!-- 1/1 -->
     <div id="/section-1/page-1" class="ft-page slide-head slide-title" data-id="page-1">
+      <img src="img/angular-shield.png" height="240px" width="180px" style="margin: 0 auto;"/>
       <h1>Try <strong>Angular 2</strong></h1>
       <h3>- Alpha-20 -</h3>
       <h3>Work in Progress...</h3>
@@ -70,7 +71,14 @@
     </div>
     <!-- 1/2 -->
     <div id="/section-1/page-2" class="ft-page slide-head slide-title" data-id="page-2">
-      <h1>Why <a href="https://angular.io/features.html">Change</a>?</h1>
+      <h1><a href="https://angular.io/features.html">Change</a> is <strong>Good</strong></h1>
+      <div style="height: 100%; width: 80%; background-color: white; border: 1px solid black; margin: 0 auto; text-shadow: 3px">
+        <ul style="text-align: left; padding: 50px;">
+          <li>Item 1</li>
+          <li>Item 1</li>
+          <li>Item 1</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="ft-section" data-id="section-2">
@@ -127,7 +135,7 @@
     </div>
     <!-- 4/4 -->
     <div id="/section-4/page-4" class="ft-page slide" data-id="page-7">
-      <h2>bootstrap(app)</h2>
+      <h2>bootstrap(<span class="stress">class</span>)</h2>
       <label >/main.js</label>
       <pre><code class="language-javascript">
         @Component({
@@ -176,21 +184,23 @@
     </div>
     <!-- 4/7 -->
     <div id="/section-4/page-7" class="ft-page slide" data-id="page-7">
-      <h2>Component Properties</h2>
+      <h2>@Directive</h2>
+      <p><strong>Caution:</strong> Recent change, not currently working!</p>
       <pre><code class="language-javascript">
-        @Component({ ... })
-        @View({
-          templateUrl: 'todos.html',
+        @Directive({
           properties: {
-            title: 'title'
+            'title': 'title'
           }
         })
+        @Component({ ... })
+        @View({ ... })
         class TodoApp { ... }
       </code></pre>
       <br>
       <pre><code class="language-markup">
         &lttodo-app title="Todos"&gt&lt/todo-app&gt
       </code></pre>
+      <p>*I have to experiment more with @Directive & @Decorator</p>
     </div>
     <!-- 4/8 -->
     <div id="/section-4/page-8" class="ft-page slide" data-id="page-7">
@@ -244,6 +254,11 @@
          &ltinput #new-todo&gt
        </code></pre>
       <a class="slide-note" href="http://plnkr.co/edit/fJDgTB?p=preview" target="_blank"><button class="btn">Demo</button></a>
+      <br/>
+      <ul>
+        <li>#localVar is like ng-init</li>
+        <li>Control() is like ng-model</li>
+      </ul>
     </div>
     <!-- 5/3 -->
     <div id="/section-5/page-3" class="ft-page slide" data-id="page-7">
@@ -256,7 +271,7 @@
     </div>
     <!-- 5/4 -->
     <div id="/section-5/page-4" class="ft-page slide" data-id="page-7">
-      <h2>(events)</h2>
+      <h2>(event)</h2>
       <pre><code class="language-markup">
         &ltinput #new-todo (keydown)&gt
       </code></pre>
@@ -270,14 +285,18 @@
     <div id="/section-5/page-5" class="ft-page slide" data-id="page-7">
       <h2>ng-* => (event)</h2>
       <ul>
-        <li>ng-click <span class="stress">=></span> (click)</li>
-        <li>ng-dblclick <span class="stress">=></span> (dbl-click)</li>
-        <li>keydown <span class="stress">=></span> (keydown)</li>
+        <li>ng-click<span class="stress"> => </span>(click)</li>
+        <li>ng-dblclick<span class="stress"> => </span>(dbl-click)</li>
+        <li>ng-keydown<span class="stress"> => </span>(keydown)</li>
+        <li>ng-keyup<span class="stress"> => </span>(keyup)</li>
+        <li>ng-mouseover<span class="stress"> => </span>(mouseover)</li>
+        <li>ng-mouseenter<span class="stress"> => </span>(mouseenter)</li>
+        <li>ng-mouseleave<span class="stress"> => </span>(mouseleave)</li>
       </ul>
     </div>
     <!-- 5/6 -->
     <div id="/section-5/page-6" class="ft-page slide" data-id="page-7">
-      <h2>[properties]</h2>
+      <h2>[property]</h2>
       <pre><code class="language-markup">
         &ltul&gt
           &ltli [style.background-color]=“newTodo.value”&gt
@@ -291,17 +310,20 @@
   <div id="/section-5/page-7" class="ft-page slide" data-id="page-7">
     <h2>ng-* => [property]</h2>
     <ul>
-      <li>ng-src <span class="stress">=></span> [src]</li>
-      <li>ng-href <span class="stress">=></span> [href]</li>
-      <li>ng-class="name" <span class="stress">=></span> [class.name]</li>
-      <li>ng-class={'name': condition} <span class="stress">=></span> [class.name]="condition"</li>
+      <li>ng-src<span class="stress"> => </span>[src]</li>
+      <li>ng-href<span class="stress"> => </span>[href]</li>
+      <li>ng-show<span class="stress"> => </span>[hidden]</li>
+      <li>ng-style<span class="stress"> => </span>[style]</li>
+      <li>ng-class="name"<span class="stress"> => </span>[class.name]</li>
+      <li>ng-class={'name': condition}<span class="stress"> => </span>[class.name]="condition"</li>
+
     </ul>
   </div>
   </div>
   <div class="ft-section" data-id="section-6">
     <!-- 6/1 -->
     <div id="/section-6/page-1" class="ft-page slide-head slide-title" data-id="page-7">
-      <h1><strong>Directives</strong></h1>
+      <h1>Built-in <strong>Directives</strong></h1>
     </div>
     <!-- 6/2 -->
     <div id="/section-6/page-2" class="ft-page slide" data-id="page-7">
@@ -330,6 +352,7 @@
         &lt/li&gt
       &lt/ul&gt
       </code></pre>
+      *<a class="slide-note" href="#" target="_blank"><button class="btn">Demo</button></a>
     </div>
   <!-- 6/4 -->
   <div id="/section-6/page-4" class="ft-page slide" data-id="page-7">
@@ -341,6 +364,7 @@
         &lt/li&gt
       &lt/ul&gt
     </code></pre>
+    *<a class="slide-note" href="#" target="_blank"><button class="btn">Demo</button></a>
   </div>
     <!-- 6/5 -->
     <div id="/section-6/page-5" class="ft-page slide" data-id="page-7">
@@ -365,6 +389,7 @@
           &lt/li&gt
         &lt/ul&gt
       </code></pre>
+      *<a class="slide-note" href="#" target="_blank"><button class="btn">Demo</button></a>
     </div>
     <!-- 6/7 -->
     <div id="/section-6/page-7" class="ft-page slide" data-id="page-7">
@@ -385,6 +410,7 @@
       <pre><code class="language-markup">
         EXAMPLE
       </code></pre>
+      *<a class="slide-note" href="#" target="_blank"><button class="btn">Demo</button></a>
     </div>
   </div>
   <div class="ft-section" data-id="section-7">
@@ -418,6 +444,8 @@
       <pre><code class="language-javascript">
         JS EXAMPLE
       </code></pre>
+      <p>Think ng-model.</p>
+      *<a class="slide-note" href="#" target="_blank"><button class="btn">Demo</button></a>
     </div>
     <!-- 7/5 -->
     <div id="/section-7/page-5" class="ft-page slide" data-id="page-7">
@@ -430,7 +458,7 @@
   <div class="ft-section" data-id="section-8">
     <div id="/section-8/page-1" class="ft-page slide-head slide-title" data-id="page-7">
       <a href="https://github.com/ShMcK/ng2Challenges"><h1 style="display: inline-block"><strong style="font-size: 0.93em">NG2</strong>Ch
-        <img style="display: inline-block; margin: 30px -15px -30px -15px" height="120px" width="70px" src="img/angular-shield.png" />
+        <img style="display: inline-block; margin: 30px -15px -30px -15px" height="120px" width="83px" src="img/angular-shield.png" />
         llenges
       </h1></a>
     </div>

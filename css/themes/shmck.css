@@ -44,6 +44,7 @@
 
 }
 
+/*
 @font-face {
   font-family: 'LobsterTwo BoldItalic';
   src: url('../../assets/fonts/LobsterTwo-BoldItalic.eot');
@@ -62,6 +63,7 @@
   font-weight: bold;
   font-style: normal;
 }
+*/
 
 /* theme */
 
@@ -226,7 +228,7 @@ body {
 }
 
 .flowtime .stress {
-  font-family: "LobsterTwo BoldItalic";
+  font-family: "BebasNeue Thin";
   color: #0067A5;
 }
 
