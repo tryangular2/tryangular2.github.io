@@ -76,76 +76,25 @@
   <div class="ft-section" data-id="section-2">
     <!-- 2/1 -->
     <div id="/section-2/page-1" class="ft-page slide-head slide-title" data-id="page-3">
-      <h1><strong>ES6</strong></h1>
+      <h1><strong>Setup</strong></h1>
     </div>
     <!-- 2/2 -->
     <div id="/section-2/page-2" class="ft-page slide" data-id="page-4">
-      <h2>ES6 Modules</h2>
-      <label >/app.js</label>
-      <pre><code class="language-javascript">
-        import {TodoStorage} from 'todoStorageService’;
-      </code></pre>
-      <br>
-      <label >/todoStorageService.js</label>
-      <pre><code class="language-javascript">
-        export class TodoStorage {}
-      </code></pre>
-
+      <h2>Browser</h2>
+      <ul>
+        <li><a href="http://t.co/VeEevfiR4c">Plunker</a></li>
+      </ul>
     </div>
-    <!-- 2/3 -->
-    <div id="/section-2/page-3" class="ft-page slide" data-id="page-5">
-      <h2>ES6 Classes</h2>
-
-    <pre><code class="language-javascript">
-      class todoApp{}
-    </code></pre>
-      <br>
-    <pre><code class="language-javascript">
-      class todoApp{
-        // initial values
-        constructor() {
-          this.todos = [];
-        }
-        // methods
-        addTodo(todo) {
-          this.todos.push(todo);
-        }
-      }
-    </code></pre>
-
+    <div id="/section-2/page-3" class="ft-page slide" data-id="page-4">
+      <h2>Computer</h2>
+      <ul>
+        <li><a href="https://github.com/pkozlowski-opensource/ng2-play">ng2-play</a></li>
+        <li><a href="https://github.com/swirlycheetah/generator-angular2">Yeoman Generator</a></li>
+        <li><a href="https://github.com/thevelourfog/slush-angular2">Slush Generator</a></li>
+        <li><a href="https://github.com/gdi2290/angular2-webpack-seed">Webpack</a></li>
+      </ul>
     </div>
-    <!-- 2/4 -->
-    <div id="/section-2/page-4" class="ft-page slide" data-id="page-6">
-      <h2>ES7<p style="display: inline">ish</p> Annotations</h2>
 
-    <pre><code class="language-javascript">
-      @Component({
-        selector: 'todo-app’
-      })
-      class TodoApp {}
-    </code></pre>
-      <p class="slide-note">Use <a href="https://github.com/shuhei/babel-plugin-angular2-annotations">Babel</a> or TypeScript 1.5 (alpha)</p>
-    </div>
-    <!-- 2/5 -->
-    <div id="/section-2/page-5" class="ft-page slide" data-id="page-7">
-      <h2>ES6 Template Strings</h2>
-
-    <pre><code class="language-javascript">
-      @Component({ selector: 'todo-app' })
-      @View({
-      template: `
-        &ltinput type="text"&gt
-        &ltul&gt
-          &ltli&gtTalk about ES6&lt/li&gt
-          &ltli&gtMake a Todo app&lt/li&gt
-        &lt/ul&gt
-      `
-      })
-      class TodoApp{}
-    </code></pre>
-
-      <p class="slide-note">Backtick ` not a quote '</p>
-    </div>
 
   </div>
   <div class="ft-section" data-id="section-3">
@@ -156,12 +105,11 @@
   <!-- 4/1 -->
   <div class="ft-section" data-id="section-4">
     <div id="/section-4/page-1" class="ft-page slide-head slide-title" data-id="page-7">
-      <h1><strong>Demo</strong></h1>
-      <h3>Todo App</h3>
+      <h1><strong>Todo App</strong></h1>
   </div>
     <!-- 4/2 -->
     <div id="/section-4/page-2" class="ft-page slide" data-id="page-7">
-      <h2>Module</h2>
+      <h2>ES6 Modules</h2>
       <pre><code class="language-javascript">
         import {bootstrap, Component, View} from 'angular2/angular2';
       </code></pre>
@@ -307,7 +255,7 @@
       <pre><code class="language-markup">
         &ltinput #new-todo (keydown)&gt
       </code></pre>
-      </br>
+      <br/>
       <pre><code class="language-markup">
         &ltinput #new-todo (keydown)=“inputTodo($event, newTodo.value)”&gt
       </code></pre>
@@ -346,7 +294,7 @@
   <div class="ft-section" data-id="section-6">
     <!-- 6/1 -->
     <div id="/section-6/page-1" class="ft-page slide-head slide-title" data-id="page-7">
-      <h1>Directives</h1>
+      <h1><strong>Directives</strong></h1>
     </div>
     <!-- 6/2 -->
     <div id="/section-6/page-2" class="ft-page slide" data-id="page-7">
