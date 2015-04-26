@@ -411,9 +411,13 @@
     <div id="/section-6/page-8" class="ft-page slide" data-id="page-7">
       <h2>[switch], [switch-when=""]</h2>
       <pre><code class="language-markup">
-        EXAMPLE
+        &lttabs [switch]="tab"&gt
+          &lttemplate [switch-when]="tab1"&gt...&lt/template&gt
+          &lttemplate [switch-when]="tab2"&gt...&lt/template&gt
+          &lttemplate [switch-default]&gt...&lt/template&gt
+        &lt/tabs&gt
       </code></pre>
-      *<a class="slide-note" href="#" target="_blank"><button class="btn">Demo</button></a>
+      <p>But not part of a todo app. Sorry!</p>
     </div>
   </div>
   <div class="ft-section" data-id="section-7">
