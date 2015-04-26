@@ -286,7 +286,7 @@
       <h2>ng-* => (event)</h2>
       <ul>
         <li>ng-click<span class="stress"> => </span>(click)</li>
-        <li>ng-dblclick<span class="stress"> => </span>(dbl-click)</li>
+        <li>ng-dblclick<span class="stress"> => </span>(dblclick)</li>
         <li>ng-keydown<span class="stress"> => </span>(keydown)</li>
         <li>ng-keyup<span class="stress"> => </span>(keyup)</li>
         <li>ng-mouseover<span class="stress"> => </span>(mouseover)</li>
@@ -383,13 +383,16 @@
     <div id="/section-6/page-6" class="ft-page slide" data-id="page-7">
       <h2>*if="condition"</h2>
       <pre><code class="language-markup">
-        &ltul *for=“#todo of todos; var i = index;” *if=“todos.length"&gt
+        &ltul *for=“#todo of todos; var i = index;”&gt
           &ltli&gt
             &ltp&gt{{index}}. {{todo.title}}&lt/p&gt
           &lt/li&gt
+        &ltform *if="isEdit(i)"&gt
+          &ltp (dblclick)="doneEditing(todo)"&gtEdit me!&lt/p&gt
+        &lt/form&gt
         &lt/ul&gt
       </code></pre>
-      *<a class="slide-note" href="#" target="_blank"><button class="btn">Demo</button></a>
+      *<a class="slide-note" href="http://plnkr.co/edit/DvRkC3?p=preview" target="_blank"><button class="btn">Demo</button></a>
     </div>
     <!-- 6/7 -->
     <div id="/section-6/page-7" class="ft-page slide" data-id="page-7">
