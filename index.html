@@ -434,8 +434,33 @@
       </code></pre>
         <a class="slide-note" href="http://plnkr.co/edit/9YrVQo?p=preview" target="_blank"><button class="btn">Demo</button></a>
         <p class="onePointX">ng-model</p>
+        <br>
+        <p>Also: <a href="https://ngforms.firebaseapp.com/#/28">ControlGroup</a>.</p>
       </div>
     <div id="/section-7/page-4" class="ft-page slide" data-id="page-7">
+      <h2>Form Builder</h2>
+      <pre><code class="language-javascript">
+        import {FormBuilder, Validators, ControlGroup, ...} from 'angular2/forms';
+
+        @Component({
+          selector: 'todo-app',
+          injectables: [TodoStorage, FormBuilder]
+        })
+        @View({ ... })
+        class TodoApp {
+          constructor(storage: TodoStorage, builder: FormBuilder) {
+            this.newTodo = new Control('');
+            this.todosList = builder.group({
+              editedTodo: [''],
+              completed: [false]
+            });
+          }
+        }
+        </code></pre>
+      </div>
+    <div id="/section-7/page-5" class="ft-page slide" data-id="page-7">
+      </div>
+    <div id="/section-7/page-6" class="ft-page slide" data-id="page-7">
       <h2>Control Model</h2>
       <ul>
         <li>value: any</li>
