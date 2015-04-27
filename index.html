@@ -460,20 +460,19 @@
       </div>
     <div id="/section-7/page-5" class="ft-page slide" data-id="page-7">
       <h2>Form Builder</h2>
-      <pre><code class="language-javascript">
+      <pre><code class="language-markup">
         &ltli *for="#todo of todos; var i = index;" [control-group]="todosList"&gt
-          &ltdiv *if="!isEdit(i)"&gt
-            &ltinput [control]="completed" type="checkbox"&gt
+          &ltdiv *if="!isEdit(i)"& [class.completed]="todosList.controls.completed.value"gt
+            &ltinput control="completed" type="checkbox"&gt
             &ltlabel (dblclick)="editTodo(todo, i)"&gt{{i + 1}}. {{todo}}&lt/label&gt
           &lt/div&gt
-          &ltform *if="isEdit(i)"&gt
-            &ltinput [control]="editedTodo"
-                id="new-todo" type="text" (dblclick)="doneEditing(todo)"&gt
-          &lt/form&gt
+          &ltdiv *if="isEdit(i)"&gt
+            &ltinput control="editedTodo" (dblclick)="doneEditing(todo)"&gt
+          &lt/div&gt
         &lt/li&gt
       </code></pre>
-    <a class="slide-note" href="http://plnkr.co/edit/RSAvmq?p=preview" target="_blank"><button class="btn">Demo</button></a>
-      <p>In Progress (unfinished slide)</p>
+    <a class="slide-note" href="http://plnkr.co/edit/1y4RD9?p=preview" target="_blank"><button class="btn">Demo</button></a>
+      <p>Control({ completed }) => [class.completed]</p>
     </div>
     <div id="/section-7/page-6" class="ft-page slide" data-id="page-7">
       <h2>Control Model</h2>
