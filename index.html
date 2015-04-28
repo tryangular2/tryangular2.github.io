@@ -287,9 +287,11 @@
     </div>
     <!-- 5/4 -->
     <div id="/section-5/page-4" class="ft-page slide" data-id="page-16">
-      <h2>(event), $event</h2>
+      <h2>(event)="statement"</h2>
       <pre><code class="language-markup">
         &ltinput #new-todo (keydown)&gt
+
+        &lt-- Syntax Choices: (event-name) || on-event-name --&gt
       </code></pre>
       <br/>
       <pre><code class="language-markup">
@@ -313,7 +315,7 @@
     </div>
     <!-- 5/6 -->
     <div id="/section-5/page-6" class="ft-page slide" data-id="page-18">
-      <h2>[property]</h2>
+      <h2>[property]="expression"</h2>
       <pre><code class="language-markup">
         &ltul&gt
           &ltli [style.background-color]=“newTodo.value”&gt
@@ -321,7 +323,8 @@
           &lt/li&gt
         &lt/ul&gt
 
-        &lt--Option 2: bind-attributeName --&gt
+        &lt-- Syntax Choices: [attr-name] || bind-attr-name --&gt
+        &lt-- must be a single expression. No assignment. No ;, var, if, etc. --&gt
       </code></pre>
       <p class="extra onePointX"> ng-style="{'background-color':newTodo}"></p>
       <a class="slide-note" href="http://plnkr.co/edit/OEWHs1?p=preview" target="_blank"><button class="btn">Demo</button></a>
@@ -332,8 +335,9 @@
     <ul>
       <li>ng-src<span class="stress"> => </span>[src]</li>
       <li>ng-href<span class="stress"> => </span>[href]</li>
-      <li>ng-show<span class="stress"> => </span>[hidden]</li>
-      <li>ng-style<span class="stress"> => </span>[style]</li>
+      <li>ng-show<span class="stress"> => </span>[visible]</li>
+      <li>ng-hide<span class="stress"> => </span>[hidden]</li>
+      <li>ng-style="color: red"<span class="stress"> => </span>[style.color]="red"</li>
       <li>ng-class="name"<span class="stress"> => </span>[class.name]</li>
       <li>ng-class={'name': condition}<span class="stress"> => </span>[class.name]="condition"</li>
 
@@ -379,7 +383,7 @@
   <div id="/section-6/page-4" class="ft-page slide" data-id="page-23">
     <h2>index</h2>
     <pre><code class="language-markup">
-      &ltul *for=“#todo of todos; #i = index;”&gt
+      &ltul *for=“#todo of todos; var i = index;”&gt
         &ltli&gt
           &ltp&gt{{i}}. {{todo}}&lt/p&gt
         &lt/li&gt
