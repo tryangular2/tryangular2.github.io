@@ -278,6 +278,10 @@
       <pre><code class="language-markup">
         &ltinput #new-todo /&gt
         &ltp&gt{{newTodo.value}}&lt/p&gt
+
+
+        &lt-- bindings are stringified --&gt
+        &lt-- &ltp [text|0]=" stringify(newTodo.value) "&gt_&lt/p&gt --&gt
       </code></pre>
       <a class="slide-note" href="http://plnkr.co/edit/7QzS2l?p=preview" target="_blank"><button class="btn">Demo</button></a>
     </div>
@@ -316,6 +320,8 @@
             {{newTodo.value}}
           &lt/li&gt
         &lt/ul&gt
+
+        &lt--Option 2: bind-attributeName --&gt
       </code></pre>
       <p class="extra onePointX"> ng-style="{'background-color':newTodo}"></p>
       <a class="slide-note" href="http://plnkr.co/edit/OEWHs1?p=preview" target="_blank"><button class="btn">Demo</button></a>
@@ -373,9 +379,9 @@
   <div id="/section-6/page-4" class="ft-page slide" data-id="page-23">
     <h2>index</h2>
     <pre><code class="language-markup">
-      &ltul *for=“#todo of todos; var i = index;”&gt
+      &ltul *for=“#todo of todos; #i = index;”&gt
         &ltli&gt
-          &ltp&gt{{index}}. {{todo}}&lt/p&gt
+          &ltp&gt{{i}}. {{todo}}&lt/p&gt
         &lt/li&gt
       &lt/ul&gt
     </code></pre>
@@ -587,6 +593,10 @@
           <p><a href="https://github.com/michaelbromley/angular-es6">Angular 1.x + ES6</a></p>
           <p><a href="http://martinmicunda.com/2015/02/09/how-to-start-writing-apps-with-es6-angular-1x-and-jspm/">ES6, Angular 1.x & JSPM</a></p>
           </div>
+        </li>
+        <li>
+          <h3>Shadow DOM, Templates, Imports</h3>
+          <p style="margin-left: 30px;"><a href="http://toddmotto.com/web-components-concepts-shadow-dom-imports-templates-custom-elements/">@toddmotto article</a></p>
         </li>
         <li>
           <h3>@timjacobi | <a href="https://github.com/timjacobi/angular2-education">Angular2-Education</a></h3>
