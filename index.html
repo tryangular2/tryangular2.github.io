@@ -102,8 +102,8 @@
         <h2>Compilers</h2>
         <ul>
           <li><a href="babel.io">Babel</a> + <a href="https://github.com/shuhei/babel-plugin-angular2-annotations">Annotations</a></li>
-          <li><a href="https://github.com/Microsoft/TypeScript">TypeScript 1.5-alpha</a></li>
           <li><a href="https://github.com/google/traceur-compiler">Traceur</a></li>
+          <li><a href="https://github.com/Microsoft/TypeScript">TypeScript 1.5-alpha</a></li>
         </ul>
       </div>
       </div>
@@ -132,10 +132,14 @@
       <pre><code class="language-javascript">
         @Component({
           selector: 'todo-app’
+          // selector can be 'element-name', '.class', '[attribute]', '[attribute=value]', ':not(sub_selector)'
+          // multiple selectors are allowed
+          // example:
+          // selector: 'input[type=text]' matches all &ltinput type="text"&gt
         })
         class TodoApp {}
       </code></pre>
-      <p class="onePointX extra">Directive + Controller</p>
+      <p class="onePointX extra">Directive with template + Controller</p>
     </div>
     <!-- 4/4 -->
     <div id="/section-4/page-4" class="ft-page slide" data-id="page-7">
@@ -153,6 +157,9 @@
       <label >/index.html</label>
       <pre><code class="language-markup">
         &lttodo-app&gt&lt/todo-app&gt
+
+        &lt-- have multiple apps on a page --&gt
+        &lt-- each gets an isolated Zone --&gt
       </code></pre>
       <div class="extra">
       <p>angular.module(<span class="onePointX">'app'</span>, ['Dependency'])</p>
@@ -177,19 +184,14 @@
       <h2>@View</h2>
       <pre><code class="language-javascript">
         @Component({ ... })
+        // loads template in Shadow DOM
         @View({
           template: `&lth1&gt{{title}}&lt/h1&gt`
+          //templateUrl: 'todos.html' // link to a file
         })
         class TodoApp { ... }
+        // components can have multiple views
       </code></pre>
-      <br>
-       <pre><code class="language-javascript">
-         @Component({ ... })
-         @View({
-          templateUrl: 'todos.html'
-         })
-         class TodoApp { ... }
-       </code></pre>
       <p class="extra onePointX">Directive Template/TemplateUrl</p>
       <a class="slide-note" href="http://plnkr.co/edit/Nl3vAS?p=preview" target="_blank"><button class="btn">Demo</button></a>
     </div>
@@ -294,7 +296,7 @@
     </div>
     <!-- 5/5 -->
     <div id="/section-5/page-5" class="ft-page slide" data-id="page-17">
-      <h2>ng-* => (event)</h2>
+      <h2>ng-*<span class="stress"> => </span>(event)</h2>
       <ul>
         <li>ng-click<span class="stress"> => </span>(click)</li>
         <li>ng-dblclick<span class="stress"> => </span>(dblclick)</li>
@@ -320,7 +322,7 @@
     </div>
   <!-- 5/7 -->
   <div id="/section-5/page-7" class="ft-page slide" data-id="page-19">
-    <h2>ng-* => [property]</h2>
+    <h2>ng-*<span class="stress"> => </span>[property]</h2>
     <ul>
       <li>ng-src<span class="stress"> => </span>[src]</li>
       <li>ng-href<span class="stress"> => </span>[href]</li>
@@ -579,16 +581,13 @@
       <h1><strong>Resources</strong></h1>
       <ul>
         <li>
-          <h3><a href="https://github.com/timjacobi/angular2-education">Angular2-Education</a></h3>
-          <p>@timjacobi - Angular 2 Resources</p>
+          <h3><a href="http://tagtree.io/courses/expert-es6/do">Learn ES6 - the Game</a></h3>
         </li>
         <li>
-          <h3><a href="https://github.com/angular/angular">Angular2 Repo</a></h3>
-          <p>#Angular2</p>
+          <h3>@timjacobi <a href="https://github.com/timjacobi/angular2-education">Angular2-Education</a></h3>
         </li>
         <li>
-          <h3><a href="https://t.co/YqLauqujJu">ng2Playground</a> & <a href="http://t.co/VeEevfiR4c">ng2 Plunker</a></h3>
-          <p>From @pkozlowski_os</p>
+          <h3><a href="https://github.com/angular/angular">#Angular2 Repo</a></h3>
         </li>
       </ul>
     </div>
@@ -596,16 +595,20 @@
     <h2>Credits</h2>
     <ul>
       <li>
+        <h3><a href="https://t.co/YqLauqujJu">ng2Playground</a> & <a href="http://t.co/VeEevfiR4c">ng2 Plunker</a></h3>
+        <p>From @pkozlowski_os. Plunkers were based on the example.</p>
+      </li>
+      <li>
+        <h3><a href="http://plnkr.co/">Plunker</a></h3>
+        <p>Built in Angular!</p>
+      </li>
+      <li>
         <h3><a href="http://flowtime-js.@marcolago.com/">Flowtime.js</a></h3>
         <p>@marcolago - Fantastic HTML Presentation Framework</p>
       </li>
       <li>
        <h3><a href="http://prismjs.com/">Prism.js</a></h3>
         <p>Code Syntax highlighting</p>
-      </li>
-      <li>
-        <h3><a href="http://plnkr.co/">Plunker</a></h3>
-        <p>Built in Angular!</p>
       </li>
     </ul>
   </div>
