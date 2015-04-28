@@ -86,14 +86,13 @@
       <h1><strong>Setup</strong></h1>
 
       <div style="display: flex; justify-content: space-around;">
-      <div>
-      <h2>Browser</h2>
-      <ul>
-        <li><a href="http://t.co/VeEevfiR4c">Plunker</a></li>
-      </ul>
-      </div>
 
-      <div style="display: inline-block;">
+      <div>
+        <h2>Browser</h2>
+        <ul>
+          <li><a href="http://t.co/VeEevfiR4c">Plunker</a></li>
+        </ul>
+        <br>
       <h2>Computer</h2>
       <ul>
         <li><a href="https://github.com/pkozlowski-opensource/ng2-play">ng2-play</a></li>
@@ -102,10 +101,17 @@
         <li><a href="https://github.com/gdi2290/angular2-webpack-seed">Webpack</a></li>
       </ul>
       </div>
+      <div>
+        <h2>Compilers</h2>
+        <ul>
+          <li><a href="babel.io">Babel</a> + <a href="https://github.com/shuhei/babel-plugin-angular2-annotations">Annotations</a></li>
+          <li><a href="https://github.com/Microsoft/TypeScript">TypeScript 1.5-alpha</a></li>
+          <li><a href="https://github.com/google/traceur-compiler">Traceur</a></li>
+        </ul>
+      </div>
+      </div>
     </div>
     </div>
-
-  </div>
   <!-- 4/1 -->
   <div class="ft-section" data-id="section-4">
     <div id="/section-4/page-1" class="ft-page slide-head slide-title" data-id="page-7">
@@ -446,7 +452,7 @@
         export class CustomValidators{
         // c: Control
           badLanguage(c) {
-            // 18dogbaby = bad language example
+            // 18dogbaby = bad language in Korean
             if(c.value.match(/18dogbaby/)) {
               return {
                 badLanguage: true
