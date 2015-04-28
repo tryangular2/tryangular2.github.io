@@ -110,7 +110,9 @@
   <div class="ft-section" data-id="section-4">
     <div id="/section-4/page-1" class="ft-page slide-head slide-title" data-id="page-7">
       <h1>Project: <a href="http://todomvc.com/examples/angularjs-perf/#/"><strong>Todo</strong>MVC</a></h1>
-      <iframe src="http://todomvc.com/examples/angularjs-perf/#/" height="100%" width="100%"></iframe>
+      <a href="http://todomvc.com/examples/angularjs-perf/#/" alt="TodoMVC Angular">
+        <img src="img/TodoMVC.png" alt="TodoMVCAngular" style="margin: 0 auto;"/>
+      </a>
   </div>
     <!-- 4/2 -->
     <div id="/section-4/page-2" class="ft-page slide" data-id="page-7">
@@ -436,59 +438,59 @@
       </code></pre>
         <a class="slide-note" href="http://plnkr.co/edit/9YrVQo?p=preview" target="_blank"><button class="btn">Demo</button></a>
         <p class="onePointX">ng-model</p>
-        <br>
-        <p>Also: <a href="https://ngforms.firebaseapp.com/#/28">ControlGroup</a>.</p>
       </div>
     <div id="/section-7/page-4" class="ft-page slide" data-id="page-7">
-      <h2>Form Builder</h2>
+      <h2>Custom Validators</h2>
+      <p>/validators.es6.js</p>
       <pre><code class="language-javascript">
-        import {FormBuilder, Validators, ControlGroup, ...} from 'angular2/forms';
-
-        @Component({
-          selector: 'todo-app',
-          injectables: [TodoStorage, FormBuilder]
-        })
-        @View({ ... })
-        class TodoApp {
-          constructor(storage: TodoStorage, builder: FormBuilder) {
-            this.newTodo = new Control('');
-            this.todosList = builder.group({
-              editedTodo: [''],
-              completed: [false]
-            });
+        export class CustomValidators{
+        // c: Control
+          badLanguage(c) {
+            // 18dogbaby = bad language example
+            if(c.value.match(/18dogbaby/)) {
+              return {
+                badLanguage: true
+            };
+          }
+          // return null = valid
+            return null;
           }
         }
-        </code></pre>
+      </code></pre>
+      <a class="slide-note" href="http://plnkr.co/edit/kb4B3N?p=preview" target="_blank"><button class="btn">Demo</button></a>
+
       </div>
     <div id="/section-7/page-5" class="ft-page slide" data-id="page-7">
-      <h2>Form Builder</h2>
-      <pre><code class="language-markup">
-        &ltli *for="#todo of todos; var i = index;" [control-group]="todosList"&gt
-          &ltdiv *if="!isEdit(i)"& [class.completed]="todosList.controls.completed.value"gt
-            &ltinput control="completed" type="checkbox"&gt
-            &ltlabel (dblclick)="editTodo(todo, i)"&gt{{i + 1}}. {{todo}}&lt/label&gt
-          &lt/div&gt
-          &ltdiv *if="isEdit(i)"&gt
-            &ltinput control="editedTodo" (dblclick)="doneEditing(todo)"&gt
-          &lt/div&gt
-        &lt/li&gt
+      <h2>Validators</h2>
+    <p>/main.es6.js</p>
+      <pre><code class="language-javascript">
+        import {CustomValidators} from 'validators';
+
+        @Component({
+          injectables: [TodoStorage, CustomValidators]
+        })
+        class TodoApp{
+          constructor(storage: TodoStorage, custom: CustomValidators) {
+            this.newTodo = new Control('', custom.badLanguage);
+          }
+        }
       </code></pre>
-    <a class="slide-note" href="http://plnkr.co/edit/1y4RD9?p=preview" target="_blank"><button class="btn">Demo</button></a>
-      <p>Control({ completed })<span class="stress"> =></span>[class.completed]</p>
-      <p>Not an ideal use of form builder. Will redo this slide.</p>
     </div>
     <div id="/section-7/page-6" class="ft-page slide" data-id="page-7">
-      <h2>Control Model</h2>
+      <h2>Validators</h2>
+      <pre><code class="language-markup">
+        &ltform id="todo-form" [class.invalid]="!newTodo.valid"&gt
+      </code></pre>
+      <p>Valid, Pristine, Dirty</p>
+      <br>
+      <br>
+
+    </div>
+    <div id="/section-7/page-7" class="ft-page slide" data-id="page-7">
+      <h2>Advanced Forms</h2>
       <ul>
-        <li>value: any</li>
-        <li>validator: Function</li>
-        <li>status: string</li>
-        <li>valid: boolean</li>
-        <li>pristine: boolean</li>
-        <li>dirty: boolean</li>
-        <li>errors: Map</li>
-        <li>valueChanges: Observable</li>
-        <li>setParent(parent)</li>
+        <li><a href="https://ngforms.firebaseapp.com/#/28">ControlGroup</a></li>
+        <li><a href="https://ngforms.firebaseapp.com/#/30">FormBuilder</a></li>
       </ul>
     </div>
   </div>
