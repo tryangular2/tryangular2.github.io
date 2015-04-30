@@ -140,6 +140,7 @@
       </a>
 
       <h2>ES6 Modules</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         import {bootstrap, Component, View} from 'angular2/angular2';
       </code></pre>
@@ -155,6 +156,7 @@
       </a>
 
       <h2>ES6 Classes</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         class TodoApp {}
       </code></pre>
@@ -167,6 +169,7 @@
       </a>
 
       <h2>@Component</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         @Component({
           selector: 'todo-app’
@@ -182,11 +185,12 @@
       </a>
 
       <h2>@View</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         @Component({ ... })
         @View({
           template: `&lth1&gt{{title}}&lt/h1&gt` // or:
-        //templateUrl: 'todos.html'
+          //templateUrl: 'todos.html'
         })
         class TodoApp { ... }
       </code></pre>
@@ -202,7 +206,7 @@
       </a>
 
       <h2>bootstrap(<span class="onePointX">class</span>)</h2>
-      <label>/main.js</label>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         @Component({ selector: 'todo-app’ })
         @View({ template: `&lth1&gt{{title}}&lt/h1&gt` })
@@ -210,6 +214,7 @@
 
         bootstrap(TodoApp);
       </code></pre>
+      <br>
       <label>/index.html</label>
       <pre><code class="language-markup">
         &lttodo-app&gt&lt/todo-app&gt
@@ -227,6 +232,7 @@
       </a>
 
       <h2>Class Constructor</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         @Component({ selector: 'todo-app’ })
         class TodoApp {
@@ -241,6 +247,7 @@
     <!-- 4/8 -->
     <div id="/section-4/page-8" class="ft-page slide" data-id="page-11">
       <h2>Class Methods</h2>
+      <label>/storage.es6.js</label>
       <pre><code class="language-javascript">
         export class TodoStorage {
           // initial values
@@ -266,6 +273,7 @@
       </a>
 
       <h2>Inject Services</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         import {TodoStorage} from 'todoStorageService';
 
@@ -293,6 +301,7 @@
     <!-- 5/2 -->
     <div id="/section-5/page-2" class="ft-page slide" data-id="page-14">
       <h2>#Local Variables</h2>
+      <label>/todos.html</label>
        <pre><code class="language-markup">
          &ltinput #new-todo&gt
        </code></pre>
@@ -310,6 +319,7 @@
       </a>
 
       <h2>{{ binding }}</h2>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltinput #new-todo /&gt
         &ltp&gt{{newTodo.value}}&lt/p&gt
@@ -325,10 +335,12 @@
       </a>
 
       <h2>(event)="statement"</h2>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltinput #new-todo (keydown)&gt
       </code></pre>
-      <br/>
+      <br>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltinput #new-todo (keydown)=“addTodo($event, newTodo.value)”&gt
       </code></pre>
@@ -353,6 +365,7 @@
     <!-- 5/6 -->
     <div id="/section-5/page-6" class="ft-page slide" data-id="page-18">
       <h2>[property]="expression"</h2>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltul&gt
           &ltli [style.background-color]=“newTodo.value”&gt
@@ -387,6 +400,7 @@
     <!-- 6/2 -->
     <div id="/section-6/page-2" class="ft-page slide" data-id="page-21">
       <h2>For</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         import {bootstrap, Component, View, For} from 'angular2/angular2';
 
@@ -408,6 +422,7 @@
       </a>
 
       <h2>*for="#item of items"</h2>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltul *for=“#todo of todos”&gt
           &ltli&gt
@@ -423,6 +438,7 @@
     <!-- 6/4 -->
     <div id="/section-6/page-4" class="ft-page slide" data-id="page-23">
       <h2>index</h2>
+      <label>/todos.html</label>
     <pre><code class="language-markup">
       &ltul *for=“#todo of todos; var i = index;”&gt
         &ltli&gt
@@ -438,6 +454,7 @@
     <!-- 6/5 -->
     <div id="/section-6/page-5" class="ft-page slide" data-id="page-24">
       <h2>If</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         import {bootstrap, Component, View, For, If} from 'angular2/angular2';
 
@@ -455,6 +472,7 @@
       </a>
 
       <h2>*if="condition"</h2>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltul *for=“#todo of todos; var i = index;”&gt
           &ltli&gt
@@ -484,6 +502,7 @@
       </a>
 
       <h2>Control</h2>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         import {Control, FormDirectives, ControlDirective} from 'angular2/forms';
 
@@ -502,6 +521,7 @@
     <!-- 7/3 -->
     <div id="/section-7/page-3" class="ft-page slide" data-id="page-28">
       <h2>Control</h2>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltinput [control]="newTodo" (keydown)="addTodo($event)"&gt
       </code></pre>
@@ -518,7 +538,7 @@
 
       <h2>Validators</h2>
 
-      <p>/main.es6.js</p>
+      <label>/main.es6.js</label>
       <pre><code class="language-javascript">
         import {CustomValidators} from 'validators';
 
@@ -539,7 +559,7 @@
 
       <h2>Custom Validators</h2>
 
-      <p>/validators.es6.js</p>
+      <label>/validators.es6.js</label>
       <pre><code class="language-javascript">
         export class CustomValidators{
           // c: Control
@@ -562,6 +582,7 @@
     </div>
     <div id="/section-7/page-6" class="ft-page slide" data-id="page-31">
       <h2>Validators</h2>
+      <label>/todos.html</label>
       <pre><code class="language-markup">
         &ltform id="todo-form" [class.invalid]="!newTodo.valid"&gt
       </code></pre>
@@ -706,7 +727,7 @@
       <h2><strong>Learn</strong> More</h2>
       <ul>
         <li>
-          <a href="https://angular.github.io/router/" target="_blank">Component Router</a></li>
+          <a href="https://angular.github.io/router/" target="_blank">Angular New Router</a></li>
         <li>
           <a href="http://webpack.github.io/docs/comparison.html" target="_blank">
             Module Loaders
