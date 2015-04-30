@@ -103,3 +103,7 @@
   background-image: radial-gradient(16px at 60px 50% , darkgoldenrod 0%, darkgoldenrod 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
   text-decoration: none;
 }
+
+.recommended a {
+  color: darkorange !important;
+}

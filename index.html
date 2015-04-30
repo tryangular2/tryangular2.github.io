@@ -84,13 +84,12 @@
     <!-- 3/1 -->
     <div id="/section-2/page-1" class="ft-page slide" data-id="page-3">
       <h1><strong>Setup</strong></h1>
-      <p>Pick one: </p>
       <div style="display: flex; justify-content: space-around;">
 
       <div>
         <h2>Boilerplates</h2>
         <ul>
-          <li><a href="http://t.co/VeEevfiR4c" target="_blank">Plunker</a> *</li>
+          <li class="recommended"><a href="http://t.co/VeEevfiR4c" target="_blank">Plunker</a></li>
           <li><a href="https://github.com/pkozlowski-opensource/ng2-play" target="_blank">ng2-play</a></li>
           <li><a href="https://github.com/swirlycheetah/generator-angular2" target="_blank">Yeoman Generator</a></li>
           <li><a href="https://github.com/thevelourfog/slush-angular2" target="_blank">Slush Generator</a></li>
@@ -101,7 +100,7 @@
       <div>
         <h2>Compilers</h2>
         <ul>
-          <li><a href="babel.io">Babel</a> + <a href="https://github.com/shuhei/babel-plugin-angular2-annotations" target="_blank">Annotations</a></li>
+          <li class="recommended"><a href="babel.io">Babel</a> + <a href="https://github.com/shuhei/babel-plugin-angular2-annotations" target="_blank">Annotations</a></li>
           <li><a href="https://github.com/google/traceur-compiler" target="_blank">Traceur</a></li>
           <li><a href="https://github.com/Microsoft/TypeScript" target="_blank">TypeScript 1.5-alpha</a></li>
         </ul>
@@ -326,7 +325,6 @@
     </div>
     <!-- 6/2 -->
     <div id="/section-6/page-2" class="ft-page slide" data-id="page-21">
-      <a href="https://angular.io/docs/js/latest/api/directives/For-class.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>For</h2>
       <pre><code class="language-javascript">
       import {bootstrap, Component, View, For} from 'angular2/angular2';
@@ -344,6 +342,7 @@
     </div>
     <!-- 6/3 -->
     <div id="/section-6/page-3" class="ft-page slide" data-id="page-22">
+      <a href="https://angular.io/docs/js/latest/api/directives/For-class.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>*for="#item of items"</h2>
       <pre><code class="language-markup">
       &ltul *for=“#todo of todos”&gt
@@ -357,7 +356,6 @@
     </div>
   <!-- 6/4 -->
   <div id="/section-6/page-4" class="ft-page slide" data-id="page-23">
-    <a href="https://angular.io/docs/js/latest/api/directives/If-class.html" target="_blank"><button class="help-btn">?</button></a>
     <h2>index</h2>
     <pre><code class="language-markup">
       &ltul *for=“#todo of todos; var i = index;”&gt
@@ -384,6 +382,7 @@
     </div>
     <!-- 6/6 -->
     <div id="/section-6/page-6" class="ft-page slide" data-id="page-25">
+      <a href="https://angular.io/docs/js/latest/api/directives/If-class.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>*if="condition"</h2>
       <pre><code class="language-markup">
         &ltul *for=“#todo of todos; var i = index;”&gt
@@ -569,19 +568,6 @@
   </div>
   <div class="ft-section" data-id="section-9">
     <div id="/section-10/page-1" class="ft-page slide" data-id="page-36">
-      <h2><strong>Learn</strong> More</h2>
-      <ul>
-        <li>Component Router</li>
-        <li>Module Loaders</li>
-        <li>HTML Imports, &lttemplate&gt, Shadow DOM</li>
-        <li>Component Architecture</li>
-        <li>Unidirectional Data Flow</li>
-        <li>Immutable Data</li>
-        <li>ES7 Observables</li>
-        <li>ES6 Generators</li>
-      </ul>
-    </div>
-    <div id="/section-10/page-2" class="ft-page slide" data-id="page-36">
       <h2><strong>Resources</strong></h2>
       <ul>
         <li>
@@ -598,6 +584,35 @@
         <li>
           <h3>#Angular2 | <a href="https://github.com/angular/angular" target="_blank">Repo</a> | <a href="https://angular.io/docs/js/latest/api/" target="_blank">Preview Docs</a></h3>
         </li>
+      </ul>
+    </div>
+    <div id="/section-10/page-2" class="ft-page slide" data-id="page-36">
+      <h2><strong>Learn</strong> More</h2>
+      <ul>
+        <li>
+          <a href="https://angular.github.io/router/" target="_blank">Component Router</a></li>
+        <li>
+          <a href="http://webpack.github.io/docs/comparison.html" target="_blank">
+            Module Loaders
+          </a>
+        </li>
+        <li>
+          <a href="http://webcomponents.org/articles/introduction-to-html-imports/" target="_blank">HTML Imports</a>,
+          <a href="http://webcomponents.org/articles/introduction-to-template-element/" target="_blank">&lttemplate&gt</a>,
+          <a href="http://webcomponents.org/articles/introduction-to-shadow-dom/">Shadow DOM</a>
+        </li>
+        <li>
+          <a href="http://busypeoples.github.io/post/thinking-in-components-angular-js/" target="_blank">
+            Component Based Architecture
+          </a>
+        </li>
+        <li><a href="http://victorsavkin.com/post/99998937651/building-angular-apps-using-flux-architecture" target="_blank">
+          Unidirectional Data Flow
+        </a>
+        </li>
+        <li><a href="http://victorsavkin.com/post/110170125256/change-detection-in-angular-2" target="_blank">
+          Immutable Data & Observables in Angular 2</a></li>
+        <li><a href="http://davidwalsh.name/es6-generators" target="_blank">ES6 Generators</a></li>
       </ul>
     </div>
   <div id="/section-10/page-3" class="ft-page slide" data-id="page-37">
