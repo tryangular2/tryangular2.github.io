@@ -169,7 +169,7 @@
       <h2>@Component</h2>
       <pre><code class="language-javascript">
         @Component({
-        selector: 'todo-app’
+          selector: 'todo-app’
         })
         class TodoApp {}
       </code></pre>
@@ -185,8 +185,8 @@
       <pre><code class="language-javascript">
         @Component({ ... })
         @View({
-        template: `&lth1&gt{{title}}&lt/h1&gt` // or:
-        // templateUrl: 'todos.html'
+          template: `&lth1&gt{{title}}&lt/h1&gt` // or:
+        //templateUrl: 'todos.html'
         })
         class TodoApp { ... }
       </code></pre>
@@ -230,10 +230,10 @@
       <pre><code class="language-javascript">
         @Component({ selector: 'todo-app’ })
         class TodoApp {
-        // initial values
-        constructor() {
-        this.todos = ['First thing', 'Second thing', 'Third thing'];
-        }
+          // initial values
+          constructor() {
+            this.todos = ['First thing', 'Second thing', 'Third thing'];
+          }
         }
       </code></pre>
       <p class="extra onePointX">Controller</p>
@@ -243,17 +243,18 @@
       <h2>Class Methods</h2>
       <pre><code class="language-javascript">
         export class TodoStorage {
-        // initial values
-        constructor () {
-        this.STORAGE_ID = 'todos-angular2';
-        }
-        // methods
-        get() {
-        return JSON.parse(localStorage.getItem(this.STORAGE_ID) || '[]');
-        }
-        put(todos) {
-        localStorage.setItem(this.STORAGE_ID, JSON.stringify(todos));
-        }
+          // initial values
+          constructor () {
+            this.STORAGE_ID = 'todos-angular2';
+          }
+
+          // methods
+          get() {
+            return JSON.parse(localStorage.getItem(this.STORAGE_ID) || '[]');
+          }
+          put(todos) {
+            localStorage.setItem(this.STORAGE_ID, JSON.stringify(todos));
+          }
         }
       </code></pre>
       <p class="extra onePointX">Singletons: Controller, Service, Factory, Directive</p>
@@ -269,13 +270,13 @@
         import {TodoStorage} from 'todoStorageService';
 
         @Component({
-        selector: 'todo-app',
-        injectables: [ TodoStorage ]
+          selector: 'todo-app',
+          injectables: [ TodoStorage ]
         })
         class TodoApp {
-        constructor(storage: TodoStorage) {
-        this.todos = storage.get() || [];
-        }
+          constructor(storage: TodoStorage) {
+            this.todos = storage.get() || [];
+          }
         }
       </code></pre>
       <p class="extra onePointX">function TodoCtrl(TodoStorageService) {}</p>
@@ -354,9 +355,9 @@
       <h2>[property]="expression"</h2>
       <pre><code class="language-markup">
         &ltul&gt
-        &ltli [style.background-color]=“newTodo.value”&gt
-        {{newTodo.value}}
-        &lt/li&gt
+          &ltli [style.background-color]=“newTodo.value”&gt
+            {{newTodo.value}}
+          &lt/li&gt
         &lt/ul&gt
       </code></pre>
       <p class="extra onePointX"> ng-style="{'background-color':newTodo}"></p>
@@ -390,13 +391,13 @@
         import {bootstrap, Component, View, For} from 'angular2/angular2';
 
         @View({
-        templateUrl: 'todos.html’,
-        directives: [For]
+          templateUrl: 'todos.html’,
+          directives: [For]
         })
         class TodoApp{
-        constructor() {
-        this.todos = [‘first thing’, ‘second thing’, ‘third thing’];
-        }
+          constructor() {
+            this.todos = [‘first thing’, ‘second thing’, ‘third thing’];
+          }
         }
       </code></pre>
     </div>
@@ -409,9 +410,9 @@
       <h2>*for="#item of items"</h2>
       <pre><code class="language-markup">
         &ltul *for=“#todo of todos”&gt
-        &ltli&gt
-        &ltp&gt{{todo}}&lt/p&gt
-        &lt/li&gt
+          &ltli&gt
+            &ltp&gt{{todo}}&lt/p&gt
+          &lt/li&gt
         &lt/ul&gt
       </code></pre>
       <p class="extra onePointX">ng-repeat="todo in vm.todos"</p>
@@ -424,9 +425,9 @@
       <h2>index</h2>
     <pre><code class="language-markup">
       &ltul *for=“#todo of todos; var i = index;”&gt
-      &ltli&gt
-      &ltp&gt{{i}}. {{todo}}&lt/p&gt
-      &lt/li&gt
+        &ltli&gt
+          &ltp&gt{{i}}. {{todo}}&lt/p&gt
+        &lt/li&gt
       &lt/ul&gt
     </code></pre>
       <p class="extra onePointX">ng-repeat="todo in vm.todos track by $index"></p>
@@ -441,8 +442,8 @@
         import {bootstrap, Component, View, For, If} from 'angular2/angular2';
 
         @View({
-        templateUrl: 'todos.html’,
-        directives: [For, If]
+          templateUrl: 'todos.html’,
+          directives: [For, If]
         })
         Class TodoApp{}
       </code></pre>
@@ -456,12 +457,12 @@
       <h2>*if="condition"</h2>
       <pre><code class="language-markup">
         &ltul *for=“#todo of todos; var i = index;”&gt
-        &ltli&gt
-        &ltp&gt{{index}}. {{todo.title}}&lt/p&gt
-        &lt/li&gt
-        &ltform *if="isEdit(i)"&gt
-        &ltp (dblclick)="doneEditing(todo)"&gtEdit me!&lt/p&gt
-        &lt/form&gt
+          &ltli&gt
+            &ltp&gt{{index}}. {{todo.title}}&lt/p&gt
+          &lt/li&gt
+          &ltform *if="isEdit(i)"&gt
+            &ltp (dblclick)="doneEditing(todo)"&gtEdit me!&lt/p&gt
+          &lt/form&gt
         &lt/ul&gt
       </code></pre>
       <p class="extra onePointX">ng-if="vm.currentIndex === $index"></p>
@@ -485,15 +486,16 @@
       <h2>Control</h2>
       <pre><code class="language-javascript">
         import {Control, FormDirectives, ControlDirective} from 'angular2/forms';
+
         @Component({ ... })
         @View({ ...
-        directives: [For, If, FormDirectives]
+          directives: [For, If, FormDirectives]
         })
         class TodoApp {
-        constructor( ...) {
-        ...
-        this.newTodo = new Control('');
-        }
+          constructor( ...) {
+          ...
+            this.newTodo = new Control('');
+          }
         }
       </code></pre>
     </div>
@@ -521,12 +523,12 @@
         import {CustomValidators} from 'validators';
 
         @Component({
-        injectables: [TodoStorage, CustomValidators]
+          injectables: [TodoStorage, CustomValidators]
         })
         class TodoApp{
-        constructor(storage: TodoStorage, custom: CustomValidators) {
-        this.newTodo = new Control('', custom.badLanguage);
-        }
+          constructor(storage: TodoStorage, custom: CustomValidators) {
+            this.newTodo = new Control('', custom.badLanguage);
+          }
         }
       </code></pre>
     </div>
@@ -540,17 +542,17 @@
       <p>/validators.es6.js</p>
       <pre><code class="language-javascript">
         export class CustomValidators{
-        // c: Control
-        badLanguage(c) {
-        // 18dogbaby = bad language in Korean
-        if(c.value.match(/18dogbaby/)) {
-        return {
-        badLanguage: true
-        };
-        }
-        // return null = valid
-        return null;
-        }
+          // c: Control
+          badLanguage(c) {
+            // 18dogbaby = bad language in Korean
+            if(c.value.match(/18dogbaby/)) {
+              return {
+                badLanguage: true
+              };
+            }
+          // return null = valid
+          return null;
+          }
         }
       </code></pre>
       <a class="slide-note" href="http://plnkr.co/edit/kb4B3N?p=preview" target="_blank">
