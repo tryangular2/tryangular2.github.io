@@ -73,7 +73,7 @@
   <div class="ft-section" data-id="section-2">
     <!-- 2/1 -->
     <div id="/section-3/page-1" class="ft-page slide-head slide-title" data-id="page-2">
-      <h1><a href="https://angular.io/features.html">Change</a> is <strong>Good</strong></h1>
+      <h1><a href="https://angular.io/features.html" target="_blank">Change</a> is <strong>Good</strong></h1>
       <iframe src="https://angular.io/features.html" height="100%" width="100%"></iframe>
       <!--<a href="https://angular.io/features.html">-->
         <!--<img src="img/Angulariofeatures.png" target="_blank" alt="Angular2Features" height="100%" width="100%" />-->
@@ -84,41 +84,42 @@
     <!-- 3/1 -->
     <div id="/section-2/page-1" class="ft-page slide" data-id="page-3">
       <h1><strong>Setup</strong></h1>
-
+      <p>Pick one: </p>
       <div style="display: flex; justify-content: space-around;">
 
       <div>
         <h2>Boilerplates</h2>
         <ul>
-          <li><a href="http://t.co/VeEevfiR4c">Plunker</a></li>
-          <li><a href="https://github.com/pkozlowski-opensource/ng2-play">ng2-play</a></li>
-          <li><a href="https://github.com/swirlycheetah/generator-angular2">Yeoman Generator</a></li>
-          <li><a href="https://github.com/thevelourfog/slush-angular2">Slush Generator</a></li>
-          <li><a href="https://github.com/gdi2290/angular2-webpack-seed">Webpack</a></li>
-          <li><a href="https://github.com/htdt/ng2-jspm">JSPM</a></li>
+          <li><a href="http://t.co/VeEevfiR4c" target="_blank">Plunker</a> *</li>
+          <li><a href="https://github.com/pkozlowski-opensource/ng2-play" target="_blank">ng2-play</a></li>
+          <li><a href="https://github.com/swirlycheetah/generator-angular2" target="_blank">Yeoman Generator</a></li>
+          <li><a href="https://github.com/thevelourfog/slush-angular2" target="_blank">Slush Generator</a></li>
+          <li><a href="https://github.com/gdi2290/angular2-webpack-seed" target="_blank">Webpack</a></li>
+          <li><a href="https://github.com/htdt/ng2-jspm" target="_blank">JSPM</a></li>
       </ul>
       </div>
       <div>
         <h2>Compilers</h2>
         <ul>
-          <li><a href="babel.io">Babel</a> + <a href="https://github.com/shuhei/babel-plugin-angular2-annotations">Annotations</a></li>
-          <li><a href="https://github.com/google/traceur-compiler">Traceur</a></li>
-          <li><a href="https://github.com/Microsoft/TypeScript">TypeScript 1.5-alpha</a></li>
+          <li><a href="babel.io">Babel</a> + <a href="https://github.com/shuhei/babel-plugin-angular2-annotations" target="_blank">Annotations</a></li>
+          <li><a href="https://github.com/google/traceur-compiler" target="_blank">Traceur</a></li>
+          <li><a href="https://github.com/Microsoft/TypeScript" target="_blank">TypeScript 1.5-alpha</a></li>
         </ul>
       </div>
       </div>
     </div>
     </div>
-  <!-- 4/1 -->
   <div class="ft-section" data-id="section-4">
+    <!-- 4/1 -->
     <div id="/section-4/page-1" class="ft-page slide-head slide-title" data-id="page-4">
-      <h1>Project: <a href="http://todomvc.com/examples/angularjs-perf/#/"><strong>Todo</strong>MVC</a></h1>
-      <a href="http://todomvc.com/examples/angularjs-perf/#/" alt="TodoMVC Angular">
+      <h1>Project: <a href="http://todomvc.com/examples/angularjs-perf/#/" target="_blank"><strong>Todo</strong>MVC</a></h1>
+      <a href="http://todomvc.com/examples/angularjs-perf/#/" target="_blank" alt="TodoMVC Angular">
         <img src="img/TodoMVC.png" alt="TodoMVCAngular" style="margin: 0 auto;"/>
       </a>
   </div>
     <!-- 4/2 -->
     <div id="/section-4/page-2" class="ft-page slide" data-id="page-5">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import" target="_blank"><button class="help-btn">?</button></a>
       <h2>ES6 Modules</h2>
       <pre><code class="language-javascript">
         import {bootstrap, Component, View} from 'angular2/angular2';
@@ -128,76 +129,79 @@
     </div>
     <!-- 4/3 -->
     <div id="/section-4/page-3" class="ft-page slide" data-id="page-6">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" target="_blank"><button class="help-btn">?</button></a>
+      <h2>ES6 Classes</h2>
+      <pre><code class="language-javascript">
+        class TodoApp {}
+      </code></pre>
+      <p class="onePointX extra">Directive Controller</p>
+    </div>
+    <!-- 4/4 -->
+    <div id="/section-4/page-4" class="ft-page slide" data-id="page-6">
+      <a href="https://angular.io/docs/js/latest/api/annotations/Component-class.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>@Component</h2>
       <pre><code class="language-javascript">
         @Component({
           selector: 'todo-app’
-          // selector can be 'element-name', '.class', '[attribute]', '[attribute=value]', ':not(sub_selector)'
-          // multiple selectors are allowed
-          // example:
-          // selector: 'input[type=text]' matches all &ltinput type="text"&gt
         })
         class TodoApp {}
       </code></pre>
       <p class="onePointX extra">Directive with template + Controller</p>
     </div>
-    <!-- 4/4 -->
-    <div id="/section-4/page-4" class="ft-page slide" data-id="page-7">
-      <h2>bootstrap(<span class="onePointX">classname</span>)</h2>
+    <!-- 4/5 -->
+    <div id="/section-4/page-5" class="ft-page slide" data-id="page-9">
+      <a href="https://angular.io/docs/js/latest/api/annotations/View-class.html" target="_blank"><button class="help-btn">?</button></a>
+      <h2>@View</h2>
+      <pre><code class="language-javascript">
+        @Component({ ... })
+        @View({
+          template: `&lth1&gt{{title}}&lt/h1&gt` // or:
+          // templateUrl: 'todos.html'
+        })
+        class TodoApp { ... }
+      </code></pre>
+      <p class="extra onePointX">Directive Template/TemplateUrl</p>
+      <a class="slide-note" href="http://plnkr.co/edit/Nl3vAS?p=preview" target="_blank"><button class="btn">Demo</button></a>
+    </div>
+    <!-- 4/6 -->
+    <div id="/section-4/page-6" class="ft-page slide" data-id="page-7">
+      <a href="https://angular.io/docs/js/latest/api/core/bootstrap-function.html" target="_blank"><button class="help-btn">?</button></a>
+      <h2>bootstrap(<span class="onePointX">class</span>)</h2>
       <label >/main.js</label>
       <pre><code class="language-javascript">
-        @Component({
-          selector: 'todo-app’
-        })
+        @Component({ selector: 'todo-app’ })
+        @View({ template: `&lth1&gt{{title}}&lt/h1&gt` })
         class TodoApp {}
 
         bootstrap(TodoApp);
       </code></pre>
-
-      <label >/index.html</label>
+      <label>/index.html</label>
       <pre><code class="language-markup">
         &lttodo-app&gt&lt/todo-app&gt
-
-        &lt-- have multiple apps on a page --&gt
-        &lt-- each gets an isolated Zone --&gt
       </code></pre>
       <div class="extra">
       <p>angular.module(<span class="onePointX">'app'</span>, ['Dependency'])</p>
       <p>&ltbody <span class="onePointX">ng-app="todo-app"</span>&gt</p>
       </div>
     </div>
-    <!-- 4/5 -->
-    <div id="/section-4/page-5" class="ft-page slide" data-id="page-8">
-      <h2>class</h2>
+    <!-- 4/7 -->
+    <div id="/section-4/page-7" class="ft-page slide" data-id="page-8">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor" target="_blank"><button class="help-btn">?</button></a>
+      <h2>Class Constructor</h2>
       <pre><code class="language-javascript">
         @Component({  selector: 'todo-app’ })
         class TodoApp {
+          // initial values
           constructor() {
-          this.todos = ['First thing', 'Second thing', 'Third thing'];
+            this.todos = ['First thing', 'Second thing', 'Third thing'];
           }
         }
       </code></pre>
       <p class="extra onePointX">Controller</p>
     </div>
-    <!-- 4/6 -->
-    <div id="/section-4/page-6" class="ft-page slide" data-id="page-9">
-      <h2>@View</h2>
-      <pre><code class="language-javascript">
-        @Component({ ... })
-        // loads template in Shadow DOM
-        @View({
-          template: `&lth1&gt{{title}}&lt/h1&gt`
-          //templateUrl: 'todos.html' // link to a file
-        })
-        class TodoApp { ... }
-        // components can have multiple views
-      </code></pre>
-      <p class="extra onePointX">Directive Template/TemplateUrl</p>
-      <a class="slide-note" href="http://plnkr.co/edit/Nl3vAS?p=preview" target="_blank"><button class="btn">Demo</button></a>
-    </div>
-    <!-- 4/7 -->
-    <div id="/section-4/page-7" class="ft-page slide" data-id="page-11">
-      <h2>Service</h2>
+    <!-- 4/8 -->
+    <div id="/section-4/page-8" class="ft-page slide" data-id="page-11">
+      <h2>Class Methods</h2>
       <pre><code class="language-javascript">
         export class TodoStorage {
         // initial values
@@ -213,21 +217,20 @@
           }
         }
       </code></pre>
-      <p class="extra onePointX">Service, Factory</p>
+      <p class="extra onePointX">Singletons: Controller, Service, Factory, Directive</p>
     </div>
     <!-- 4/9 -->
-    <div id="/section-4/page-8" class="ft-page slide" data-id="page-12">
+    <div id="/section-4/page-9" class="ft-page slide" data-id="page-12">
+      <a href="https://angular.io/docs/js/latest/api/di_annotations/Inject-class.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>Inject Services</h2>
       <pre><code class="language-javascript">
         import {TodoStorage} from 'todoStorageService';
 
         @Component({
           selector: 'todo-app',
-          // inject!
           injectables: [ TodoStorage ]
         })
         class TodoApp {
-          // alias injectables
           constructor(storage: TodoStorage) {
             this.todos = storage.get() || [];
           }
@@ -254,24 +257,20 @@
     </div>
     <!-- 5/3 -->
     <div id="/section-5/page-3" class="ft-page slide" data-id="page-15">
+      <a href="https://angular.io/docs/js/latest/guide/displaying-data.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>{{ binding }}</h2>
       <pre><code class="language-markup">
         &ltinput #new-todo /&gt
         &ltp&gt{{newTodo.value}}&lt/p&gt
-
-
-        &lt-- bindings are stringified --&gt
-        &lt-- &ltp [text|0]=" stringify(newTodo.value) "&gt_&lt/p&gt --&gt
       </code></pre>
       <a class="slide-note" href="http://plnkr.co/edit/7QzS2l?p=preview" target="_blank"><button class="btn">Demo</button></a>
     </div>
     <!-- 5/4 -->
     <div id="/section-5/page-4" class="ft-page slide" data-id="page-16">
+      <a href="https://angular.io/docs/js/latest/guide/user-input.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>(event)="statement"</h2>
       <pre><code class="language-markup">
         &ltinput #new-todo (keydown)&gt
-
-        &lt-- Syntax Choices: (event-name) || on-event-name --&gt
       </code></pre>
       <br/>
       <pre><code class="language-markup">
@@ -302,9 +301,6 @@
             {{newTodo.value}}
           &lt/li&gt
         &lt/ul&gt
-
-        &lt-- Syntax Choices: [attr-name] || bind-attr-name --&gt
-        &lt-- must be a single expression. No assignment. No ;, var, if, etc. --&gt
       </code></pre>
       <p class="extra onePointX"> ng-style="{'background-color':newTodo}"></p>
       <a class="slide-note" href="http://plnkr.co/edit/OEWHs1?p=preview" target="_blank"><button class="btn">Demo</button></a>
@@ -320,7 +316,6 @@
       <li>ng-style="color: red"<span class="stress"> => </span>[style.color]="red"</li>
       <li>ng-class="name"<span class="stress"> => </span>[class.name]</li>
       <li>ng-class={'name': condition}<span class="stress"> => </span>[class.name]="condition"</li>
-
     </ul>
   </div>
   </div>
@@ -331,6 +326,7 @@
     </div>
     <!-- 6/2 -->
     <div id="/section-6/page-2" class="ft-page slide" data-id="page-21">
+      <a href="https://angular.io/docs/js/latest/api/directives/For-class.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>For</h2>
       <pre><code class="language-javascript">
       import {bootstrap, Component, View, For} from 'angular2/angular2';
@@ -361,6 +357,7 @@
     </div>
   <!-- 6/4 -->
   <div id="/section-6/page-4" class="ft-page slide" data-id="page-23">
+    <a href="https://angular.io/docs/js/latest/api/directives/If-class.html" target="_blank"><button class="help-btn">?</button></a>
     <h2>index</h2>
     <pre><code class="language-markup">
       &ltul *for=“#todo of todos; var i = index;”&gt
@@ -410,6 +407,7 @@
 
       <!-- 7/2 -->
       <div id="/section-7/page-2" class="ft-page slide" data-id="page-27">
+        <a href="https://angular.io/docs/js/latest/api/forms/ControlDirective-class.html" target="_blank"><button class="help-btn">?</button></a>
         <h2>Control</h2>
       <pre><code class="language-javascript">
         import {Control, FormDirectives, ControlDirective} from 'angular2/forms';
@@ -434,28 +432,8 @@
         <a class="slide-note" href="http://plnkr.co/edit/9YrVQo?p=preview" target="_blank"><button class="btn">Demo</button></a>
         <p class="onePointX">ng-model</p>
       </div>
-    <div id="/section-7/page-4" class="ft-page slide" data-id="page-29">
-      <h2>Custom Validators</h2>
-      <p>/validators.es6.js</p>
-      <pre><code class="language-javascript">
-        export class CustomValidators{
-        // c: Control
-          badLanguage(c) {
-            // 18dogbaby = bad language in Korean
-            if(c.value.match(/18dogbaby/)) {
-              return {
-                badLanguage: true
-            };
-          }
-          // return null = valid
-            return null;
-          }
-        }
-      </code></pre>
-      <a class="slide-note" href="http://plnkr.co/edit/kb4B3N?p=preview" target="_blank"><button class="btn">Demo</button></a>
-
-      </div>
-    <div id="/section-7/page-5" class="ft-page slide" data-id="page-30">
+    <div id="/section-7/page-4" class="ft-page slide" data-id="page-30">
+      <a href="https://angular.io/docs/js/latest/api/forms/Validators-class.html" target="_blank"><button class="help-btn">?</button></a>
       <h2>Validators</h2>
     <p>/main.es6.js</p>
       <pre><code class="language-javascript">
@@ -471,6 +449,28 @@
         }
       </code></pre>
     </div>
+    <div id="/section-7/page-5" class="ft-page slide" data-id="page-29">
+      <a href="https://ngforms.firebaseapp.com/#/31" target="_blank"><button class="help-btn">?</button></a>
+      <h2>Custom Validators</h2>
+      <p>/validators.es6.js</p>
+      <pre><code class="language-javascript">
+        export class CustomValidators{
+          // c: Control
+          badLanguage(c) {
+            // 18dogbaby = bad language in Korean
+            if(c.value.match(/18dogbaby/)) {
+              return {
+                badLanguage: true
+              };
+            }
+          // return null = valid
+          return null;
+          }
+        }
+      </code></pre>
+      <a class="slide-note" href="http://plnkr.co/edit/kb4B3N?p=preview" target="_blank"><button class="btn">Demo</button></a>
+
+    </div>
     <div id="/section-7/page-6" class="ft-page slide" data-id="page-31">
       <h2>Validators</h2>
       <pre><code class="language-markup">
@@ -482,24 +482,25 @@
 
     </div>
     <div id="/section-7/page-7" class="ft-page slide" data-id="page-32">
+      <a href="https://ngforms.firebaseapp.com/#/" target="_blank"><button class="help-btn">?</button></a>
       <h2>Advanced Forms</h2>
       <ul>
-        <li><a href="https://ngforms.firebaseapp.com/#/28">ControlGroup</a></li>
-        <li><a href="https://ngforms.firebaseapp.com/#/30">FormBuilder</a></li>
+        <li><a href="https://angular.io/docs/js/latest/api/forms/ControlGroupDirective-class.html" target="_blank">ControlGroup</a></li>
+        <li><a href="https://angular.io/docs/js/latest/api/forms/FormBuilder-class.html" target="_blank">FormBuilder</a></li>
       </ul>
     </div>
   </div>
     <!-- 8/1 -->
   <div class="ft-section" data-id="section-8">
     <div id="/section-8/page-1" class="ft-page slide-head slide-title" data-id="page-33">
-      <a href="https://github.com/ShMcK/ng2Challenges"><h1 style="display: inline-block"><strong style="font-size: 0.93em">NG2</strong>Ch
+      <a href="https://github.com/ShMcK/ng2Challenges" target="_blank"><h1 style="display: inline-block"><strong style="font-size: 0.93em">NG2</strong>Ch
         <img style="display: inline-block; margin: 30px -15px -30px -15px" height="120px" width="83px" src="img/angular-shield.png" />
         llenges
       </h1></a>
     </div>
     <!-- 8/2 -->
     <div id="/section-8/page-2" class="ft-page slide slide-title" data-id="page-34">
-      <a href="https://github.com/ShMcK/ng2Challenges"><h1 style="display: inline-block"><strong style="font-size: 0.93em">NG2</strong>Ch
+      <a href="https://github.com/ShMcK/ng2Challenges" target="_blank"><h1 style="display: inline-block"><strong style="font-size: 0.93em">NG2</strong>Ch
         <img style="display: inline-block; margin: 30px -15px -30px -15px" height="120px" width="83px" src="img/angular-shield.png" />
         llenges
       </h1></a>
@@ -526,7 +527,7 @@
     </div>
     <!-- 8/3 -->
     <div id="/section-8/page-3" class="ft-page slide slide-title" data-id="page-35">
-      <a href="https://github.com/ShMcK/ng2Challenges"><h1 style="display: inline-block"><strong style="font-size: 0.93em">NG2</strong>Ch
+      <a href="https://github.com/ShMcK/ng2Challenges" target="_blank"><h1 style="display: inline-block"><strong style="font-size: 0.93em">NG2</strong>Ch
         <img style="display: inline-block; margin: 30px -15px -30px -15px" height="120px" width="83px" src="img/angular-shield.png" />
         llenges
       </h1></a>
@@ -536,9 +537,9 @@
         <img src="img/numeric-1-box-outline.png" class="img-centered" />
       <h2>Beginner</h2>
       <ul>
-        <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/TweetBox">TweetBox</a></li>
-        <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Star-Rater">Star Rater</a></li>
-        <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Tabs">Tabs</a></li>
+        <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/TweetBox" target="_blank">TweetBox</a></li>
+        <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Star-Rater" target="_blank">Star Rater</a></li>
+        <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Tabs" target="_blank">Tabs</a></li>
         <li>Suggestion?</li>
       </ul>
       </div>
@@ -547,8 +548,8 @@
           <img src="img/numeric-2-box-outline.png" class="img-centered"/>
           <h2>High Beginner</h2>
           <ul>
-            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Login-Form">Login Form</a></li>
-            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Search-Filter">Search Filter</a></li>
+            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Login-Form" target="_blank">Login Form</a></li>
+            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Search-Filter" target="_blank">Search Filter</a></li>
             <li>Suggestion?</li>
           </ul>
         </div>
@@ -557,9 +558,9 @@
           <img src="img/numeric-3-box-outline.png" class="img-centered"/>
           <h2>Intermediate</h2>
           <ul>
-            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/TodoMVC">Todo MVC</a></li>
-            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Chat">Chat</a></li>
-            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Family-Tree">Family Tree</a></li>
+            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/TodoMVC" target="_blank">Todo MVC</a></li>
+            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Chat" target="_blank">Chat</a></li>
+            <li><a href="https://github.com/ShMcK/ng2Challenges/wiki/Family-Tree" target="_blank">Family Tree</a></li>
             <li>Suggestion?</li>
           </ul>
         </div>
@@ -568,8 +569,9 @@
   </div>
   <div class="ft-section" data-id="section-9">
     <div id="/section-10/page-1" class="ft-page slide" data-id="page-36">
-      <h2>New <strong>Concepts</strong></h2>
+      <h2><strong>Learn</strong> More</h2>
       <ul>
+        <li>Component Router</li>
         <li>Module Loaders</li>
         <li>HTML Imports, &lttemplate&gt, Shadow DOM</li>
         <li>Component Architecture</li>
@@ -585,16 +587,16 @@
         <li>
           <h3>ES6</h3>
           <div style="margin-left: 30px;">
-          <p><a href="http://tagtree.io/courses/expert-es6/do">Learn ES6 - the Game</a></p>
-          <p><a href="https://github.com/michaelbromley/angular-es6">Angular 1.x + ES6</a></p>
-          <p><a href="http://martinmicunda.com/2015/02/09/how-to-start-writing-apps-with-es6-angular-1x-and-jspm/">ES6, Angular 1.x & JSPM</a></p>
+          <p><a href="http://tagtree.io/courses/expert-es6/do" target="_blank">Learn ES6 - the Game</a></p>
+          <p><a href="https://github.com/michaelbromley/angular-es6" target="_blank">Angular 1.x + ES6</a></p>
+          <p><a href="http://martinmicunda.com/2015/02/09/how-to-start-writing-apps-with-es6-angular-1x-and-jspm/" target="_blank">ES6, Angular 1.x & JSPM</a></p>
           </div>
         </li>
         <li>
-          <h3>@timjacobi | <a href="https://github.com/timjacobi/angular2-education">Angular2-Education</a></h3>
+          <h3>@timjacobi | <a href="https://github.com/timjacobi/angular2-education" target="_blank">Angular2-Education</a></h3>
         </li>
         <li>
-          <h3>#Angular2 | <a href="https://github.com/angular/angular">Repo</a> | <a href="https://angular.io/docs/js/latest/api/">Preview Docs</a></h3>
+          <h3>#Angular2 | <a href="https://github.com/angular/angular" target="_blank">Repo</a> | <a href="https://angular.io/docs/js/latest/api/" target="_blank">Preview Docs</a></h3>
         </li>
       </ul>
     </div>
@@ -602,19 +604,19 @@
     <h2>Credits</h2>
     <ul>
       <li>
-        <h3><a href="https://t.co/YqLauqujJu">ng2Playground</a> & <a href="http://t.co/VeEevfiR4c">ng2 Plunker</a></h3>
+        <h3><a href="https://t.co/YqLauqujJu" target="_blank">ng2Playground</a> & <a href="http://t.co/VeEevfiR4c" target="_blank">ng2 Plunker</a></h3>
         <p>@pkozlowski_os | Plunkers were based on these.</p>
       </li>
       <li>
-        <h3><a href="http://plnkr.co/">Plunker</a></h3>
+        <h3><a href="http://plnkr.co/" target="_blank">Plunker</a></h3>
         <p>Built in Angular!</p>
       </li>
       <li>
-        <h3><a href="http://flowtime-js.@marcolago.com/">Flowtime.js</a></h3>
+        <h3><a href="http://flowtime-js.@marcolago.com/" target="_blank">Flowtime.js</a></h3>
         <p>@marcolago | Fantastic HTML Presentation Framework</p>
       </li>
       <li>
-       <h3><a href="http://prismjs.com/">Prism.js</a></h3>
+       <h3><a href="http://prismjs.com/" target="_blank">Prism.js</a></h3>
         <p>Code Syntax highlighting</p>
       </li>
     </ul>
