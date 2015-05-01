@@ -38,11 +38,11 @@
 .btn {
   position: relative;
   z-index: 10000000;
-  margin-top: -70px;
+  margin-top: -50px;
   margin-right: 1px;
   vertical-align: top;
-  width: 100px;
-  height: 60px;
+  width: 5rem;
+  height: 2.5rem;
   padding: 0;
   font-size: 22px;
   color: white;
@@ -60,7 +60,7 @@
 .btn:hover {
   position: relative;
   z-index: 10000000;
-  margin-top: -68px;
+  margin-top: -48px;
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -103,6 +103,7 @@
 }
 
 .help-btn:hover {
+  margin-top: 2px;
   background: orange;
   background-image: -webkit-radial-gradient(16px at 60px 50% , darkgoldenrod 0%, darkgoldenrod 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
   background-image: -moz-radial-gradient(16px at 60px 50% , darkgoldenrod 0%, darkgoldenrod 14px, rgba(0, 0, 0, 0.3) 18px, rgba(0, 0, 0, 0) 19px);
